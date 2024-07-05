@@ -15,7 +15,6 @@ MerlinTransfer is a Python package designed for securely uploading files to a re
 ## Requirements
 
 - Python 3.6 and above
-- `paramiko` library
 
 ## Installation
 
