@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: merlintransfer
-Version: 0.5
+Version: 0.6
 Summary: Simple ssh uploader
 Home-page: https://github.com/wronqa/merlintransfer
 Author: Paweł Gawżynski && Jakub Wrona
