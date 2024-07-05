@@ -1,5 +1,9 @@
 # MerlinTransfer
 
+<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1c0947c-73d5-409d-ae9d-f9c9c07abae8/d8wk9fg-736edf92-c4f3-4c4b-91ba-2bab75d3396b.png/v1/fill/w_1024,h_1243/merlin_clipart_by_disneyfreak19_d8wk9fg-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI0MyIsInBhdGgiOiJcL2ZcL2YxYzA5NDdjLTczZDUtNDA5ZC1hZTlkLWY5YzljMDdhYmFlOFwvZDh3azlmZy03MzZlZGY5Mi1jNGYzLTRjNGItOTFiYS0yYmFiNzVkMzM5NmIucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.QqpyYBgsh2ZShDD4gl5nysxZZskUDN2-oRiTqV3_txw" alt="Przykładowy obrazek" width="300" height="300">
+
+
+
 MerlinTransfer is a Python package designed for securely uploading files to a remote server using SSH. It leverages `paramiko` for SSH connection management and allows easy customization through Python function calls.
 
 ## Features
