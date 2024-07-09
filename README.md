@@ -40,7 +40,16 @@ password = "your_ssh_password"
 remote_file_path = "/path/on/remote/server/file.txt"
 local_file_path = "path/to/local/file.txt"
 
-send_file(hostname, username, password, remote_file_path, local_file_path)
+try:
+    send_file(hostname, username, password, remote_file_path, local_file_path)
+except SSHConnectionError as e:
+    print(f"SSH Connection Error: {e}")
+except FileUploadError as e:
+    print(f"File Upload Error: {e}")
+except ParameterValidationError as e:
+    print(f"Parameter Validation Error: {e}")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
 
 ```
 
@@ -51,4 +60,18 @@ Function send_file Parameters:
 * password: The password used for SSH authentication.
 * remote_file_path: The path where the file will be uploaded on the remote server.
 * file_path: The local path of the file to upload.
+
+# Exceptions
+
+`SSHConnectionError`
+
+Raised when there is an issue with the SSH connection.
+
+`FileUploadError`
+
+Raised when there is an error during the file upload process.
+
+`ParameterValidationError`
+
+Raised when there are invalid parameters provided to the send_file function.
 
