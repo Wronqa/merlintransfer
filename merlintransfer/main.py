@@ -1,6 +1,5 @@
 import paramiko 
-import sys
-from exceptions import SSHConnectionError, FileUploadError,ParameterValidationError
+from .exceptions  import ParameterValidationError, SSHConnectionError, FileUploadError
 
 def validate_params(hostname: str, username: str, password: str, remote_file_path: str, file_path: str):
     if not hostname or not username or not password or not remote_file_path or not file_path:
@@ -27,7 +26,7 @@ def upload_file(ssh_client, local_file_path,remote_path):
         raise FileUploadError(f"Failed to upload file: {e}")
     finally:
         ssh_client.close()
-        
+
         
 def send_file(hostname:str,username:str,password:str,remote_file_path:str,file_path:str):
     validate_params(hostname, username, password, remote_file_path, file_path)
